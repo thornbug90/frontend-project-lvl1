@@ -18,5 +18,6 @@
   "homepage": "https://github.com/KatherinaFed/frontend-project-lvl1#readme",
   "dependencies": {
     "latest-version": "^5.1.0"
-  }
+  },
+  "type": "module"
 }

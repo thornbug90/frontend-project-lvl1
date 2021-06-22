@@ -19,5 +19,8 @@
   "dependencies": {
     "latest-version": "^5.1.0"
   },
-  "type": "module"
+  "type": "module",
+  "bin": {
+    "brain-games": "bin/brain-games.js"
+  }
 }

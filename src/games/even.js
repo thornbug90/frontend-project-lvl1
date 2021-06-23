@@ -8,7 +8,7 @@ const checkEven = (num) => (num % 2 === 0 ? 'yes' : 'no');
 
 // Function gives a result for a wrong answer;
 const wrongAnswer = (wrong, correct, name) => {
-  const getWrong = `Something went wrong! "${wrong}" is wrong answer =(. Correct answer was "${correct}". \nLet's try again, ${name}!`;
+  const getWrong = `"${wrong}" is wrong answer =(. Correct answer was "${correct}". \nLet's try again, ${name}!`;
 
   return console.log(getWrong);
 };

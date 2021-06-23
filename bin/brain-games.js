@@ -1,5 +1,9 @@
 #!/usr/bin/env node
-import question from '../src/cli.js';
+import greeting from '../src/cli.js';
 
-console.log('Welcome to the Brain Games!');
-question();
+const welcome = () => console.log('Welcome to the Brain Games!');
+
+// welcome();
+greeting();
+
+export default welcome;

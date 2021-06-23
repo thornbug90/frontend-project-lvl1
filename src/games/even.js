@@ -8,11 +8,9 @@ const checkEven = (num) => (num % 2 === 0 ? 'yes' : 'no');
 
 // Function gives a result for a wrong answer;
 const wrongAnswer = (wrong, correct, name) => {
-  const getWrong = console.log(
-    `Something went wrong! "${wrong}" is wrong answer =(. Correct answer was "${correct}". \nLet's try again, ${name}!`
-  );
+  const getWrong = `Something went wrong! "${wrong}" is wrong answer =(. Correct answer was "${correct}". \nLet's try again, ${name}!`;
 
-  return getWrong;
+  return console.log(getWrong);
 };
 
 // Game function
@@ -37,15 +35,3 @@ const isEven = () => {
 };
 
 export default isEven;
-
-# How to install?
-make install
-
-# Let's play!
-make brain-even
-
-# With a wrong answer
-make brain-even
-
-# With an empty answer
-make brain-even

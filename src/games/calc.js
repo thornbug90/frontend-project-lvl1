@@ -1,8 +1,6 @@
-import readlineSync from 'readline-sync';
-import greeting from '../cli.js';
+import mainFun from '../index.js';
 
-console.log('Welcome to the Brain Games!');
-
+// Result of expression
 const getResult = (num1, num2, operator) => {
   let result = null;
   if (operator === '+') result = num1 + num2;
@@ -12,39 +10,25 @@ const getResult = (num1, num2, operator) => {
   return String(result);
 };
 
-// Function gives a result for a wrong answer;
-const wrongAnswer = (wrong, correct, name) => {
-  const getWrong = `"${wrong}" is wrong answer =(. Correct answer was "${correct}". \nLet's try again, ${name}!`;
+const taskOfGame = 'What is the result of the expression?';
 
-  return console.log(getWrong);
-};
-
-const calc = () => {
-  const userName = greeting();
+// -------------Brain-Calc-------------
+const brainCalc = () => {
+  const gameValue = [];
   const operations = ['+', '-', '*'];
 
-  console.log('What is the result of the expression?');
-
   for (let round = 0; round < 3; round += 1) {
-    const randomSign =
-      operations[Math.floor(Math.random() * operations.length)];
     const number1 = Math.floor(Math.random() * 50);
     const number2 = Math.floor(Math.random() * 50);
+    const randomSign = operations[Math.floor(Math.random() * operations.length)];
 
-    const expression = number1 + ` ${randomSign} ` + number2;
-    const resultOfExpression = getResult(number1, number2, randomSign);
-    console.log(`Question: ${expression}`);
-    const answer = readlineSync.question('Your answer: ');
+    const question = `${number1} ${randomSign} ${number2}`; // question
+    const correctAnswer = getResult(number1, number2, randomSign); // correct result
 
-    if (resultOfExpression === answer) {
-      console.log('Correct!');
-    }
-    if (resultOfExpression !== answer) {
-      return wrongAnswer(answer, resultOfExpression, userName);
-    }
+    gameValue.push([question, correctAnswer]);
   }
 
-  return console.log(`Congratulations, ${userName}!`);
+  return gameValue;
 };
 
-export default calc;
+export default () => mainFun(taskOfGame, brainCalc());

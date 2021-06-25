@@ -1,4 +1,4 @@
-# Welcome to Brain Games!
+# Welcome to The Brain Games!
 <a href="https://codeclimate.com/github/KatherinaFed/frontend-project-lvl1/maintainability"><img src="https://api.codeclimate.com/v1/badges/33435174492c119ea799/maintainability" /></a> [![Github actions](https://github.com/KatherinaFed/frontend-project-lvl1/actions/workflows/github-actions.yml/badge.svg)](https://github.com/KatherinaFed/frontend-project-lvl1/actions/workflows/github-actions.yml)
 
 ### 1. The game "Check an even number". "Yes" or "No"? Let`s get it! =)

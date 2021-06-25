@@ -1,7 +1,6 @@
 import mainFun from '../index.js';
-
-// Check an even number.
-const checkEven = (num) => (num % 2 === 0 ? 'yes' : 'no');
+import isEven from '../extraFn/isEven.js';
+import getRandom from '../extraFn/getRandom.js';
 
 const taskOfGame = 'Answer "yes" if the number is even, otherwise answer "no".';
 
@@ -10,10 +9,10 @@ const brainEven = () => {
   const gameValue = [];
 
   for (let round = 0; round < 3; round += 1) {
-    const randomNumber = Math.floor(Math.random() * 100);
+    const randomNumber = getRandom(1, 100);
 
     const question = `Question: ${randomNumber}`;
-    const correctAnswer = checkEven(randomNumber);
+    const correctAnswer = isEven(randomNumber);
 
     gameValue.push([question, correctAnswer]);
   }

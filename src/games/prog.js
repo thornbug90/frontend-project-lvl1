@@ -1,20 +1,8 @@
 import mainFun from '../index.js';
+import getRandom from '../extraFn/getRandom.js';
+import getProgArray from '../extraFn/getProgression.js';
 
 const taskOfGame = 'What number is missing in the progression?';
-
-const getRandom = (min, max) => Math.floor(Math.random() * (max - min) + min);
-
-// Get a progression array;
-const getProgArray = (num, diff) => {
-  const arrProg = [num];
-
-  for (let i = 0; i < 9; i += 1) {
-    const last = arrProg[arrProg.length - 1];
-    arrProg.push(last + diff);
-  }
-
-  return arrProg;
-};
 
 // -------------Brain-Progression-------------
 const brainProg = () => {
@@ -29,7 +17,7 @@ const brainProg = () => {
     const replaceNum = progArray.indexOf(getCorrect);
     progArray[replaceNum] = '..';
 
-    const question = String(progArray.join(' '));
+    const question = `Question: ${String(progArray.join(' '))}`;
     const correctAnswer = String(getCorrect);
 
     gameValue.push([question, correctAnswer]);

@@ -12,7 +12,7 @@ const brainGcd = () => {
     const number1 = getRandom(1, 50);
     const number2 = getRandom(1, 50);
 
-    const question = `${number1} ${number2}`;
+    const question = `Question: ${number1} ${number2}`;
     const correctAnswer = gcd(number1, number2);
 
     gameValue.push([question, correctAnswer]);

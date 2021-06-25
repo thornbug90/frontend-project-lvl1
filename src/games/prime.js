@@ -11,7 +11,7 @@ const brainPrime = () => {
   for (let round = 0; round < 3; round += 1) {
     const getNumber = getRandom(2, 101);
 
-    const question = String(getNumber);
+    const question = `Question: ${String(getNumber)}`;
     const correctAnswer = sayPrimeOrNot(getNumber);
 
     gameValue.push([question, correctAnswer]);

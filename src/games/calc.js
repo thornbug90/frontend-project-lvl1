@@ -14,7 +14,7 @@ const brainCalc = () => {
     const number2 = getRandom(1, 50);
     const randomSign = operations[Math.floor(Math.random() * operations.length)];
 
-    const question = `${number1} ${randomSign} ${number2}`; // question
+    const question = `Question: ${number1} ${randomSign} ${number2}`; // question
     const correctAnswer = getResult(number1, number2, randomSign); // correct result
 
     gameValue.push([question, correctAnswer]);

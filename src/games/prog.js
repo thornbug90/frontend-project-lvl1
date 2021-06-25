@@ -17,7 +17,7 @@ const brainProg = () => {
     const replaceNum = progArray.indexOf(getCorrect);
     progArray[replaceNum] = '..';
 
-    const question = String(progArray.join(' '));
+    const question = `Question: ${String(progArray.join(' '))}`;
     const correctAnswer = String(getCorrect);
 
     gameValue.push([question, correctAnswer]);

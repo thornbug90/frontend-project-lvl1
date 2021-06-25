@@ -10,6 +10,6 @@ const isPrime = (num) => {
   return true;
 };
 
-const sayPrimeOrNot = (num) => isPrime(num) ? 'yes' : 'no';
+const sayPrimeOrNot = (num) => (isPrime(num) ? 'yes' : 'no');
 
 export default sayPrimeOrNot;

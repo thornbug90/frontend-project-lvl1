@@ -11,3 +11,7 @@
 ### The game "Find the greatest common divisor" (NOD). You`ll do it!
 
 <a href="https://asciinema.org/a/S4pbPeWoKR5RBLW4CaeIMxoQu" target="_blank"><img src="https://asciinema.org/a/S4pbPeWoKR5RBLW4CaeIMxoQu.svg" /></a>
+
+### The game "Arithmetic progression".
+
+<a href="https://asciinema.org/a/svDxYj3mS3dYQgWbfTYM5IVQi" target="_blank"><img src="https://asciinema.org/a/svDxYj3mS3dYQgWbfTYM5IVQi.svg" /></a>

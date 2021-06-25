@@ -9,7 +9,7 @@ const brainPrime = () => {
   const gameValue = [];
 
   for (let round = 0; round < 3; round += 1) {
-    const getNumber = getRandom(2, 101);
+    const getNumber = getRandom(1, 101);
 
     const question = `Question: ${String(getNumber)}`;
     const correctAnswer = sayPrimeOrNot(getNumber);

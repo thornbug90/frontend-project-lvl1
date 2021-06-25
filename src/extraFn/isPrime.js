@@ -1,6 +1,6 @@
 const isPrime = (num) => {
   if (num < 2) {
-    return false
+    return false;
   }
 
   const limit = Math.floor(Math.sqrt(num));

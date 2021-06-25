@@ -18,7 +18,7 @@ const mainFun = (taskOfGame, gameValue) => {
   for (let round = 0; round < 3; round += 1) {
     const [question, correct] = gameValue[round];
 
-    console.log(question);
+    console.log(`Question: ${question}`);
     const answer = readlineSync.question('Your answer: ');
 
     if (answer === correct) {

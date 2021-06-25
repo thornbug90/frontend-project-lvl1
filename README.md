@@ -15,3 +15,7 @@
 ### The game "Arithmetic progression".
 
 <a href="https://asciinema.org/a/svDxYj3mS3dYQgWbfTYM5IVQi" target="_blank"><img src="https://asciinema.org/a/svDxYj3mS3dYQgWbfTYM5IVQi.svg" /></a>
+
+### The game "Is prime or not?".
+
+<a href="https://asciinema.org/a/hsYcJCW8TOMDWpeosl3b18Wcl" target="_blank"><img src="https://asciinema.org/a/hsYcJCW8TOMDWpeosl3b18Wcl.svg" /></a>
